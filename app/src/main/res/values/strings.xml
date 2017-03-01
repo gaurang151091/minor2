@@ -6,4 +6,8 @@
     <string name="action_github">Github</string>
     <string name="action_share">Share</string>
 
+    <string name="FACEBOOK_APP_ID">232728637135993</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">7ed345e2469e6f046c82ddee091e6e3c</string>
+    <string name="title_activity_drawer_">Drawer_Activity</string>
+
 </resources>
