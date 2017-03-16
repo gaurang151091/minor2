@@ -3,13 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     tools:context="com.example.anku.minor2.MainActivity">
+
     <LinearLayout
-        android:background="@drawable/sale"
-        android:alpha="0.4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@drawable/sale"
+        android:orientation="horizontal" />
     <!--<RelativeLayout-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
@@ -26,8 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawablePadding="0dp"
-            android:minHeight="80dp"
-            android:minWidth="250dp"
+            android:minHeight="60dp"
+            android:minWidth="150dp"
             android:paddingLeft="30dp"
             android:paddingRight="20dp"
             android:paddingTop="-5dp"
@@ -37,10 +40,10 @@
             fbutton:cornerRadius="15dp"
             fbutton:shadowEnabled="true"
             fbutton:shadowHeight="6dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="350dp"
             android:layout_marginStart="43dp"
-            android:layout_below="@+id/login_button"
+
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -49,8 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawablePadding="0dp"
-            android:minHeight="80dp"
-            android:minWidth="250dp"
+            android:minHeight="60dp"
+            android:minWidth="150dp"
             android:paddingLeft="30dp"
             android:paddingRight="20dp"
             android:paddingTop="-5dp"
@@ -60,14 +63,50 @@
             fbutton:cornerRadius="15dp"
             fbutton:shadowEnabled="true"
             fbutton:shadowHeight="6dp"
-            android:layout_marginTop="156dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/signup_button"
-            android:layout_alignStart="@+id/signup_button" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="240dp"
+            android:layout_alignParentTop="true"/>
+            <!--android:layout_alignLeft="@+id/signup_button"-->
+            <!--android:layout_alignStart="@+id/signup_button" -->
+
+
 
 
         <!--android:drawableLeft="@drawable/twitter"-->
 
+
+
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_hasFocus="false"
+        app:mtf_image="@drawable/phone"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <!--
+        app:mtf_animationDuration="1000"
+        app:mtf_cardColor="@color/cardview_dark_background"
+        app:mtf_labelColor="@android:color/holo_red_dark"
+        app:mtf_openKeyboardOnFocus="true"
+        -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
 
 

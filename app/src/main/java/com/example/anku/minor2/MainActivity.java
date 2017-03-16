@@ -1,3 +1,4 @@
+
 package com.example.anku.minor2;
 
 
@@ -62,7 +63,7 @@ public class MainActivity extends ActionBarActivity {
         } else {
 
         }
-    //    LoginBtn=(FButton) findViewById(R.id.button);
+        //    LoginBtn=(FButton) findViewById(R.id.button);
         LoginBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -77,8 +78,8 @@ public class MainActivity extends ActionBarActivity {
 
                 //name= (EditText) findViewById(R.id.editText);
                 //phone_number=(EditText) findViewById(R.id.phonenumber);
-               // PhoneNumber p=new PhoneNumber("91",phone_number.getText()+"","");
-               // configurationBuilder.setInitialPhoneNumber(p);
+                // PhoneNumber p=new PhoneNumber("91",phone_number.getText()+"","");
+                // configurationBuilder.setInitialPhoneNumber(p);
                 configurationBuilder.setReadPhoneStateEnabled(true);
                 configurationBuilder.setReceiveSMS(true);
                 intent.putExtra(
